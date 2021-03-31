@@ -2,11 +2,17 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
+	"log"
 )
 
 func main() {
-	text := "the quick brown fox jumped over the lazy dog"
-	fmt.Println(text)
+
+	text, err := ioutil.ReadFile("sentence.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(string(text))
 
 	vowel, consonant := 0, 0
 	for _, i := range text {
