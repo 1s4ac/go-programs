@@ -18,4 +18,5 @@ func main() {
 	fmt.Println(century(1601))
 	fmt.Println(century(2000))
 	fmt.Println(century(89))
+	fmt.Println(century(2021))
 }
