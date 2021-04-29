@@ -4,7 +4,7 @@ import "fmt"
 
 func sumCubes(n int) (result int) {
 	for i := 1; i <= n; i++ {
-		result += (i) * (i) * (i)
+		result += i * i * i
 	}
 	return result
 }
